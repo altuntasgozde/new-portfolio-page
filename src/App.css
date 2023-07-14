@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;500;600&display=swap');
+
+.App {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cover {
+    position: relative;
+    background-color: #000;
+}
+
+.cover::before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.3;
+    background: url('./assets/5039684.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    .cover::before{
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+       
+        z-index: 0;
+        opacity: 0.3;
+        background: url('./assets/5039684.jpg') no-repeat center center;
+    background-size: cover;
+
+    }
+  }
+
+.firstScreen {
+    position: relative;
+}
+
+/* .name {
+    font-family: 'Lobster', cursive;
+    letter-spacing: 5px;
+} */
